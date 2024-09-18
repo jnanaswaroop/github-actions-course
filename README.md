@@ -19,3 +19,5 @@ Here are a few tips for you to best navigate the contents of this repository:
 * Example E2E repository (used in Section 18: Reusable Workflows): https://github.com/lm-academy/github-actions-course-example-e2e
 
 * GitHub Actions documentation homepage: https://docs.github.com/en/actions 
+
+Edited
