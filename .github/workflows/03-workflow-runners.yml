@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: 03 - Workflow Runners
 on:
     push:
@@ -9,4 +10,24 @@ jobs:
               run: |
                 echo "This is ubuntu os"
                 echo "Runner OS: $RUNNER_OS"
+=======
+name: 03 - Workflow Runners
+on:
+    push:
+jobs:
+    echo-ubuntu-runner:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show OS
+              run: |
+                echo "This job is running on ubuntu os"
+                echo "Runner OS: $RUNNER_OS"
+    echo-windows-runner:
+        runs-on: windows-latest
+        steps:
+            - name: Show OS
+              run: |
+                echo "This job is running on windows os"
+                echo "Runner OS: $RUNNER_OS"
+>>>>>>> 47c53cde585ddafd8b967e1edb4df6522552ad7d
             
