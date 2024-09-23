@@ -5,8 +5,10 @@ jobs:
     echo1:
         runs-on: ubuntu-latest
         steps:
+            - name: Sleep for 20 seconds
+              run: sleep 20
             - name: failing step
-              run: exit 0
+              run: exit 1
             - name: i will be skipped
               if: ${{ success() }}
               run: echo "I will print if the previous step succeed."
