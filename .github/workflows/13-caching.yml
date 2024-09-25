@@ -1,6 +1,6 @@
 name: Working with Caching
 on:
-    workflow_trigger:
+    workflow_dispatch:
         inputs:
             use-cache:
                 type: boolean
