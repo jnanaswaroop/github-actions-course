@@ -57,13 +57,10 @@ jobs:
             - name: Download Cached Dependencies
               uses: actions/cache@v3
               if: ${{ inputs.use-cache }}
-            #   id: cache
+              id: cache
               with:
                 path: 13-caching/react-app/node_modules
                 key: ${{ needs.install-deps.outputs.deps-cache-key }}
-            # - name: Install Dependencies
-            #   if: steps.cache.outputs.cache-hit != 'true'
-            #   run: npm ci
             - name: Testing
               run: npm run test
             - name: Linting
@@ -85,13 +82,10 @@ jobs:
             - name: Download Cached Dependencies
               uses: actions/cache@v3
               if: ${{ inputs.use-cache }}
-            #   id: cache
+              id: cache
               with:
                 path: 13-caching/react-app/node_modules
                 key: ${{ needs.install-deps.outputs.deps-cache-key }}
-            # - name: Install Dependencies
-            #   if: steps.cache.outputs.cache-hit != 'true'
-            #   run: npm ci
             - name: Testing
               run: npm run test
             - name: Building
