@@ -27,7 +27,7 @@ jobs:
                 path: 14-artifacts/react-app/node_modules
                 key: deps-node-module-${{ hashFiles('14-artifacts/react-app/package-lock.json') }}
             - name: Install Dependencies
-              if: steps.cache-key.outcome.cache-hit != 'true'
+              if: steps.cache-key.outputs.cache-hit != 'true'
               run: npm ci
             - name: Unit Test
               run: npm run test
