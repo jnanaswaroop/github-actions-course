@@ -27,7 +27,6 @@ jobs:
             - name: Perform some tests
               run: |
                 echo "Running on OS ${{ matrix.os }} and NodeJS ${{ matrix.node-version }}"
-                sleep 20
             - name: Upload test results
               run: echo "Uploading test results"
     include-example:
