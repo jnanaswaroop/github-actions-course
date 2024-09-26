@@ -47,4 +47,4 @@ jobs:
                       shape: triangle
         steps:
             - name: Dummy Step
-              run: echo "${{ matrix.colour }}-${{ matrix.shape }}-${{ matrix.size }}"
+              run: echo "${{ matrix.colour }}-${{ matrix.shape }}-${{ matrix.size }}-${{ matrix.opacity }}"
